@@ -1,0 +1,48 @@
+
+
+body{
+    text-align: center;
+    background-color: #121212;
+    color: white;
+}
+
+.counter{
+    font-size: 6rem;
+    color: aqua;
+}
+
+button{
+    background-color: aqua;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+.incrementBy{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.incrementBy p{
+    font-size: 2rem;
+}
+
+.incrementBy input{
+    width: 100px;
+    font-size:24px;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+.incrementBy button{
+    align-self: center;
+    margin-top: 20px;
+}
