@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+     font-family: 'Poppins', sans-serif;
+}
+:root {
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text-color: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+.dark-mode {
+   --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text-color: #a4a5bd;
+    --primary-color: #a6a9af;
+    --accent-color: #0071ff;
+}
+
+body {
+   
+    background-color: var(--base-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    transition: background-color ;
+}
+
+header {
+   padding: 1rem;
+   margin-top: 3rem;
+   
+}
+
+#mode-toggle{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--base-variant);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+#mode-toggle svg{
+    height: 20px;
+    width: 20px;
+    fill: var(--text-color);
+}
+
+#mode-toggle svg:last-child{
+    display: none;
+}
+
+.dark-mode #mode-toggle svg:first-child{
+    display: none;
+}
+.dark-mode #mode-toggle svg:last-child{
+    display: block;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+p{
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 1rem;
+}
+
+
+
+
+div :first-child {
+    margin-top: 1rem;
+    background-color: var(--accent-color);
+    color: var(--base-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+div :first-child:hover {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+}
+
+div :last-child {
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--base-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+div :last-child:hover {
+    background-color: var(--base-variant);
+    color: var(--text-color);
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--base-variant);
+    margin-top: 2rem;
+}
