@@ -1,0 +1,30 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 50px;
+  transition: background-color 0.5s;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#hexCode {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+
+.slider {
+  margin-top: 20px;
+}
