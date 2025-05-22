@@ -1,0 +1,169 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #0e1117;
+     font-family: 'Poppins', sans-serif;
+     color: white;
+ }
+
+ .wrapper {
+     width: 100%;
+     max-width: 420px;
+ }
+
+ .main-contaner,
+ .play-board {
+     background: #1c1f26;
+     padding: 20px;
+     border-radius: 20px;
+     transition: all 0.3s ease;
+ }
+
+ .main-contaner {
+     opacity: 1;
+     visibility: visible;
+     pointer-events: auto;
+ }
+
+ .main-contaner.hide {
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+     position: absolute;
+ }
+
+ .main-contaner header {
+     font-size: 1.8rem;
+     text-align: center;
+     margin-bottom: 15px;
+     color: #00b7ff;
+     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+     padding-bottom: 10px;
+ }
+
+ .contante {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .title {
+     margin: 10px 0;
+     text-align: center;
+     font-size: 16px;
+     color: #ccc;
+ }
+
+ .option button {
+     height: 36px;
+     width: 100px;
+     margin: 10px;
+     border: none;
+     border-radius: 20px;
+     background-color: #00b7ff;
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+
+ .option button:hover {
+     transform: scale(0.96);
+     background-color: #009cd4;
+ }
+
+ .play-board {
+     margin-top: 0;
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+     position: absolute;
+ }
+
+ .play-board.show {
+     opacity: 1;
+     visibility: visible;
+     pointer-events: auto;
+     position: relative;
+ }
+
+ .detiels {
+     background-color: #2c2f36;
+     padding: 15px;
+     border-radius: 10px;
+ }
+
+ .players {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .players span {
+     width: 100%;
+     text-align: center;
+     color: #00b7ff;
+     font-size: 16px;
+     font-weight: 500;
+     padding: 8px 0;
+     border-radius: 8px;
+ }
+
+ .players .active {
+     background: #00b7ff;
+     color: white;
+ }
+
+ .main-sec-box {
+     margin-top: 20px;
+ }
+
+ section {
+     display: flex;
+     justify-content: center;
+ }
+
+ section span {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 80px;
+     height: 80px;
+     margin: 4px;
+     background-color: #1f2229;
+     border-radius: 8px;
+     font-size: 28px;
+     color: #fff;
+     box-shadow: inset 0 0 6px #00000088;
+     transition: background 0.3s ease;
+ }
+
+ section span:hover {
+     background-color: #2a2d35;
+     cursor: pointer;
+ }
+
+ .replayBtn {
+     display: none;
+     text-align: center;
+     margin-top: 20px
+ }
+
+ .replayBtn button {
+     background-color: #00b7ff;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 20px;
+     font-size: 16px;
+     cursor: pointer;
+     font-weight: bold;
+ }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tic Tac Toe Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Start Screen -->
+      <div class="main-contaner" id="mainContainer">
+        <header>Tic Tac Toe Game</header>
+        <div class="contante">
+          <div class="title">Choose your symbol to start the game</div>
+          <div class="option">
+            <button onclick="startGame()">O</button>
+            <button onclick="startGame()">X</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Board -->
+      <div class="play-board" id="playBoard">
+        <div class="detiels">
+          <div class="players">
+            <span class="Xturn active">X's Turn</span>
+            <span class="Oturn">O's Turn</span>
+          </div>
+        </div>
+        <div class="main-sec-box">
+          <section>
+            <span class="box1"></span>
+            <span class="box2"></span>
+            <span class="box3"></span>
+          </section>
+          <section>
+            <span class="box4"></span>
+            <span class="box5"></span>
+            <span class="box6"></span>
+          </section>
+          <section>
+            <span class="box7"></span>
+            <span class="box8"></span>
+            <span class="box9"></span>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="replayBtn">
+      <button id="replayBtn">
+        Replay </button>
+    </div>
+
+    <!-- section -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
