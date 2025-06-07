@@ -27,7 +27,7 @@ Click on the bubbles that match the "hit" number before the timer runs out!
 
 > Game UI Preview  
 ![Bubble Game UI](screenshot.png)  
-*Make sure to save a screenshot of your game as `screenshot.png` in the root folder.*
+
 
 ---
 
